@@ -52,7 +52,9 @@ public class Keyboard
 
     void printanything()
     {
-        System.out.println(colour);
+        System.out.println(colour); // it default takes as this.colour
+        System.out.println(x);
+        // non-static method can access both static and non-static var
     }
 
 
