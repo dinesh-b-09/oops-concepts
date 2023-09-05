@@ -20,7 +20,7 @@ public class Main
         c1.print();
         c2.print();  //c2 becomes -5 + -10i
 
-         Complex c3= new Complex(c1);
+
 
 
     }

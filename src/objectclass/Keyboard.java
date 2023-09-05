@@ -7,12 +7,20 @@ public class Keyboard
     boolean backlit;
     boolean mech;
 
-     Keyboard(String colour, String connectivity, boolean backlit, boolean mech)
+    static int x=1000;
+
+     Keyboard(String colour, String connectivity)
     {
         this.colour= colour;
         this.connectivity = connectivity;
-        this.backlit = backlit;
-        this.mech = mech;
+    }
+
+    Keyboard(String colour, String connectivity, boolean backlit, boolean mech)
+    {
+        this(colour,connectivity);
+        this.backlit=backlit;
+        this.mech=mech;
+
     }
 
     Keyboard(String col, String connect, boolean isbacklit)
@@ -21,6 +29,7 @@ public class Keyboard
         connectivity=connect;
         backlit=isbacklit;
     }
+
 
 //    void print()
 //    {
@@ -33,6 +42,17 @@ public class Keyboard
         this.connectivity = x.connectivity;
         this.backlit = x.backlit;
         this.mech = x.mech;
+    }
+
+    static void printsomething()
+    {
+        System.out.println(x);
+        // static method can access only static var but not non-static var
+    }
+
+    void printanything()
+    {
+        System.out.println(colour);
     }
 
 
